@@ -1,0 +1,22 @@
+<center><div class="login">
+<form class="form-horizontal">
+    <fieldset>
+        <legend>Login</legend>
+        <div class="" style="color:red">{{ errorMsg }}</div>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Login</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEmail" placeholder="Login" type="text" ng-model="credentials.login">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputPassword" placeholder="Password" type="password" ng-model="credentials.password">
+                <br/>
+                <button class="btn btn-primary" type="submit" ng-click="login()"> Login </button>
+
+
+</form>
+</div>
+</center>
